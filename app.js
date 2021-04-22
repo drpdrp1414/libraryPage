@@ -1,5 +1,9 @@
 var myLibrary = []
 
+
+
+
+
 function Book(title, author, pages, have_read){
     this.title = title;
     this.author = author;
@@ -18,11 +22,15 @@ function Book(title, author, pages, have_read){
 }
 
 function addBookToLibrary(){
+    var bookTable = document.querySelector("#book-list")
+    //myLibrary.forEach((book) => )
 
+    
 }
 
-
-
 hobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, false);
+rings = new Book("The Lord of the Rings", "J.R.R. Tolkien", 382, false);
 
-console.log(hobbit.info())
+myLibrary.push(hobbit)
+
+myLibrary.push(rings)
