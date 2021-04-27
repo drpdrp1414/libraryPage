@@ -35,7 +35,6 @@ function createBook(){
         var read = false
     }
     if(title != "" && author != "" && pages != ""){
-
         var book = new Book(title, author, pages, read)
         myLibrary.push(book)
         addNewBookToLibrary(book)
