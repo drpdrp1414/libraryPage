@@ -4,13 +4,15 @@ var form = document.getElementById("book-form")
 function handleForm(event) { event.preventDefault() } 
 form.addEventListener('submit', handleForm)
 
-function Book(title, author, pages, have_read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.have_read = have_read;
+class Book{
+    constructor(title, author, pages, have_read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.have_read = have_read;
+    }
 
-    this.info = function(){
+    info(){
         var status = "";
         if(have_read == true){
             status = "already read"
